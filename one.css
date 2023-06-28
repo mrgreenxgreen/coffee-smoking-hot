@@ -8,18 +8,26 @@
 html, body{
     height:100vh;
 }
+
+
 .NavParent{
     display:flex;
    justify-content:space-between;
     align-items:center; 
-    background-color:black;
+    background-color:rgb(30, 24, 21,0.5);
    width:100%;
    padding:5px;
    color: white;
+   position:fixed;
+   z-index:999;
+
+
+  
+   
 }
 
 .Logo{
-    margin-left:20px;
+    margin-left:10vw;
    font-weight:bold;
     font-style: italic;
 }
@@ -43,7 +51,7 @@ html, body{
 .Settings{
     display:flex;
     gap: 2vw;
-    margin-right:20px;
+    margin-right:10vw;
 }
 
 main{
@@ -105,13 +113,15 @@ main{
 footer{
     height:50px;
     width:100%;
-    background-color:black;
+    background-color:rgb(30, 24, 21,0.5);
     display:flex;
     align-items:center;
     justify-content:center;
    position:absolute;
   bottom:0px;
-  color:gray;
+  color:lightgray;
+  position:fixed;
+
 
 }
 
