@@ -3,8 +3,11 @@
     margin:0;
     box-sizing:border-box;
     font-family: Sans-serif;
+   
 }
-
+html, body{
+    height:100vh;
+}
 .NavParent{
     display:flex;
    justify-content:space-between;
@@ -16,6 +19,7 @@
 }
 
 .Logo{
+    margin-left:20px;
    font-weight:bold;
     font-style: italic;
 }
@@ -39,19 +43,32 @@
 .Settings{
     display:flex;
     gap: 2vw;
+    margin-right:20px;
 }
 
 main{
+    
     background-color:lightgray;
+    
 }
 
 .MainDiv{
-    height:100vh;
+    color:white;
+    position:absolute;
+    width:100vw;
+    //background-color:black;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     gap:5em;
+    background:url("WallpaperCoffee.jpg") center;
+    
+   
+}
+
+.MainDiv div h1{
+    font-family: 'Varela Round';
 }
 
 .HomeButton{
@@ -70,7 +87,7 @@ main{
     box-shadow:0px 0px 10px 2px red;
 }
 
-#Display{
+/* #Display{
     color:white;
     background-color:gray;
     height:600px;
@@ -78,21 +95,23 @@ main{
     max-width:1024px;
     display:flex;
     justify-content:center;
-    border-radius:50%;
+    border-radius:15px;
     overflow:hidden;
-}
+    
+} */
 
 
 
 footer{
     height:50px;
     width:100%;
-    background-color:pink;
+    background-color:black;
     display:flex;
     align-items:center;
     justify-content:center;
-   position:sticky;
+   position:absolute;
   bottom:0px;
+  color:gray;
 
 }
 
@@ -113,3 +132,79 @@ footer{
   .paused {
     animation-play-state: paused;
   }
+
+  #orderButton{
+    padding:10px;
+    border-radius:10px;
+    border-style:none;
+    font-size:20px;
+    background-color:rgb(133, 84, 42);
+    color:white;
+    border:2px solid rgb(54, 35, 19);
+        background: linear-gradient(170deg, rgb(192, 100, 42), rgb(69, 37, 18));
+  }
+
+  #orderButton:hover{
+    box-shadow: 0px 0px 5px 5px gray;
+    cursor:pointer;
+    color:rgb(226, 217, 213); 
+  }
+
+
+
+
+  .vapour
+{
+    
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    /* background-color:blue; */
+    position: relative;
+    display:flex;
+    z-index:1;
+    padding: 0 20px;
+
+}
+
+.vapour span{
+    position:relative;
+    bottom: 10px;
+    display: block;
+    margin: 0 2px 50px;
+    min-width: 7px;
+    height: 180px;
+    background-color: white;
+    border-radius: 50%;
+    animation: animate 4.5s linear infinite;
+    opacity:0;
+    filter:blur(7px);
+    animation-delay: calc(var(--i) * -.55s)
+
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0)  scaleX(1);
+        opacity: 0;
+    }
+    15%{
+        opacity:1;
+    }
+    50%{
+        transform: translateY(-150px) scaleX(5);
+    }
+    75%{
+        opacity: 0;
+    }
+    95%{
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(-300px) scaleX(10);
+    }
+
+}
