@@ -1,0 +1,94 @@
+<!--
+    Landing page of Sonia Ong.
+   
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta utf="8">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="one.css">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation Bar-->
+            <nav>
+                <div class="NavParent">
+                    <!--Child divs of nav bar -->
+                    <!--Logo & Brand Name-->
+                    <div class="Logo">
+                Nest<span class="BrandSpan">Café</span> 
+                    </div>
+                    <!--Menu-->
+                    <div class="Menu">
+                        <div>
+                           <a href="#">Home</a> 
+                        </div>
+                        <div>
+                           <a href="#">Products</a> 
+                        </div>
+                        <div>
+                           <a href="#">My Order</a> 
+                        </div>
+                    </div>
+                    <!--Settings-->
+                    <div class="Settings">
+                
+                        <div>
+                            Sign In
+                        </div>
+                        <div>
+                            Register
+                        </div>
+                        <div>
+                            Settings
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+        <main>
+            <div class="MainDiv">
+                <h1>Welcome to Sonia Ong</h1>
+                <div id="Display">
+                    Display some show
+                </div>
+                <div  >
+                    <button class="HomeButton" onClick="Rotate()"><a>View Products</a></button>
+                    <button class="HomeButton">Contact</button>
+                </div>
+                    
+            </div>
+        </main>
+        <footer>
+            <div>
+                <small>CopyRight: Juan Dela Cruz</small>
+                
+            </div>
+        </footer>
+    </body>
+</html>
+
+<script>
+    let x = 0;
+   
+    function Rotate() {
+        
+        x ++;
+        if (x%2 == 1){
+            document.getElementById('Display').classList.remove('paused');
+             document.getElementById('Display').classList.add('rotating');
+         }
+         else if (  x%2 == 0){
+            document.getElementById('Display').classList.add('paused');
+            x -= 2;
+         }
+    
+        
+console.log(x)
+       
+
+    }
+    
+  </script>
