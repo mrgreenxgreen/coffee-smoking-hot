@@ -3,12 +3,11 @@
     margin:0;
     box-sizing:border-box;
     font-family: Sans-serif;
-   
 }
+
 html, body{
     height:100vh;
 }
-
 
 .NavParent{
     display:flex;
@@ -19,11 +18,7 @@ html, body{
    padding:5px;
    color: white;
    position:fixed;
-   z-index:999;
-
-
-  
-   
+   z-index:999; 
 }
 
 .Logo{
@@ -55,30 +50,26 @@ html, body{
 }
 
 main{
-    
     background-color:lightgray;
-    
 }
 
 .MainDiv{
     color:white;
     position:absolute;
     width:100vw;
-    //background-color:black;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     gap:5em;
     background:url("WallpaperCoffee.jpg") center;
-    
-   
 }
 
 .MainDiv div h1{
     font-family: 'Varela Round';
     animation: fadeIn 6s;
 }
+
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -95,8 +86,6 @@ main{
     margin:15px;
     background-coloR:blACK;
     COLOR:white;
-    
-  
 }
 
 .HomeButton:hover{
@@ -113,14 +102,11 @@ footer{
     display:flex;
     align-items:center;
     justify-content:center;
-   position:absolute;
-  bottom:0px;
-  color:lightgray;
-  position:fixed;
-
-
+    position:absolute;
+    bottom:0px;
+    color:lightgray;
+    position:fixed;
 }
-
 
 @keyframes rotating {
     from {
@@ -147,7 +133,7 @@ footer{
     background-color:rgb(133, 84, 42);
     color:white;
     border:2px solid rgb(54, 35, 19);
-        background: linear-gradient(170deg, rgb(192, 100, 42), rgb(69, 37, 18));
+    background: linear-gradient(170deg, rgb(192, 100, 42), rgb(69, 37, 18));
   }
 
   #orderButton:hover{
@@ -156,12 +142,7 @@ footer{
     color:rgb(226, 217, 213); 
   }
 
-
-
-
-  .vapour
-{
-    
+  .vapour{ 
     height:100vh;
     display:flex;
     justify-content:center;
@@ -172,7 +153,6 @@ footer{
     display:flex;
     z-index:1;
     padding: 0 20px;
-
 }
 
 .vapour span{
@@ -188,7 +168,6 @@ footer{
     opacity:0;
     filter:blur(7px);
     animation-delay: calc(var(--i) * -.55s)
-
 }
 
 @keyframes animate{
@@ -212,5 +191,4 @@ footer{
     100%{
         transform: translateY(-300px) scaleX(10);
     }
-
 }
