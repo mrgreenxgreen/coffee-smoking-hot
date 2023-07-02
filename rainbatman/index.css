@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+   
+    background:url(gotham2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.rain{
+    height:100vh;
+    background:url(rain.png);
+    animation: rain .3s linear infinite;
+    opacity:.3;
+    position:absolute;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+}
+
+.rain:before{
+    content: '';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgb(219, 219, 219);
+    animation: lighting 4s linear infinite;
+    opacity: 0;
+    padding:0;
+    margin:0;
+
+}
+
+.phrase{
+    color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-size: 50px;
+    font-family: 'Underwood319', sans-serif;
+                                                
+                                      
+    
+}
+.phrase-box{
+    max-width:1024px; 
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+}
+
+#Batman{
+    
+    font-family: 'haAJJA', sans-serif;
+}
+
+
+@keyframes rain{
+    0%{
+        background-position: 0% 0%;
+
+    }
+
+    100%{
+        background-position: 20% 100%;
+
+    }
+}
+
+@keyframes lighting{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    11%{
+        opacity: 1;
+    }
+    14%{
+        opacity: .3;
+    }
+   20%{
+        opacity: .5;
+    }
+    21%{
+        opacity: .3;
+    }
+    50%{
+        opacity:0;
+    }
+
+}
