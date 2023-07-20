@@ -1,5 +1,8 @@
 # coffee-smoking-hot
-CSS only: smoke effect
+
+Smoke effect
+angular app
+Single page
 
 
 
